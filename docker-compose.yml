@@ -9,8 +9,8 @@ services:
     volumes:
       # left side: your docker-host machine
       # right side: the paths in the image (!!do not change!!)
-      - data/dedicated:/home/steam/project-zomboid-dedicated
-      - data/data:/home/steam/Zomboid
+      - ./data/dedicated:/home/steam/project-zomboid-dedicated
+      - ./data/data:/home/steam/Zomboid
       # Use this to override the default docker configuration
       #- ./Server:/home/steam/Server
     ports:
